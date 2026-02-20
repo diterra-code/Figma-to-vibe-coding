@@ -1,4 +1,4 @@
-import { OpenNewWindow, Dice, Coin, RefreshCircle } from 'iconoir-react';
+import { OpenNewWindow, Sparks, Coins, RefreshCircle } from 'iconoir-react';
 
 interface Match {
   id: string;
@@ -61,16 +61,17 @@ export default function MatchesTable() {
             <div className="flex items-center gap-2">
               {match.game === 'Dice' ? (
                 <div className="w-5 h-5 bg-[#8B4AFF] rounded flex items-center justify-center">
-                  <Dice className="w-3 h-3 text-white" />
+                  <Sparks className="w-3 h-3 text-white" />
                 </div>
               ) : (
                 <div className="w-5 h-5 bg-[#FF8C42] rounded-full flex items-center justify-center">
-                  <Coin className="w-3 h-3 text-white" />
+                  <Coins className="w-3 h-3 text-white" />
                 </div>
               )}
               <span className="text-white text-sm">{match.game}</span>
             </div>
-            
+
+
             <div className="bg-[#1A1A1A] px-3 py-1.5 rounded-md inline-flex items-center gap-2 w-fit">
               <div className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center">
                 <span className="text-white text-[10px] font-bold">$</span>
