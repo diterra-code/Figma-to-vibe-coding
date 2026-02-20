@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+
+:root {
+  --background: #1A1A1A;
+  --foreground: #FFFFFF;
+}
+
+@theme inline {
+  /* Wega Color Palette */
+  --color-wega-dark: #1A1A1A;
+  --color-wega-card: #2A2A2A;
+  --color-wega-primary: #FF8C42;
+  --color-wega-primary-hover: #FF7A2E;
+  --color-wega-purple: #8B4AFF;
+  --color-wega-orange-accent: #FF6B35;
+  --color-wega-muted: #6B4423;
+  --color-gray-text: #A0A0A0;
+  --color-gray-text-dark: #666666;
+  
+  /* Fonts */
+  --font-sans: 'League Spartan', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-display: 72px;
+  --font-size-heading: 32px;
+  --font-size-card-title: 24px;
+  
+  /* Border Radius */
+  --radius-card: 16px;
+  --radius-button: 8px;
+  --radius-badge: 6px;
+  
+  /* Shadows */
+  --shadow-glow-purple: 0 0 60px rgba(139, 74, 255, 0.3);
+  --shadow-glow-orange: 0 0 60px rgba(255, 107, 53, 0.3);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
